@@ -1,9 +1,13 @@
-import "./App.css";
+import React from 'react';
+import { Header} from "./components";
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
+
   return (
     <div className="App">
-      <h1>Hand Soap</h1>
+      <Header />
     </div>
   );
 }
