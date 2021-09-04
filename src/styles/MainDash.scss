@@ -6,8 +6,18 @@ $red-2: #f4d4d0;
 $red-1: #f3e5e4;
 
 $white: #fcf9f4;
+$light-grey: #b9b9b771;
 $mid-grey: #696760;
 $dark-grey: #323029;
+
+$hero-height-1: 160%;
+$hero-height-2: 140%;
+$hero-height-3: 140%;
+$hero-height-4: 140%;
+$hero-height-5: 140%;
+$hero-height-6: 140%;
+$hero-height-7: 140%;
+$hero-height-8: 140%;
 
 .hero-wrap {
   background: linear-gradient(192deg, #ffffff1a 70%, rgba(211, 209, 209, 0.879)),
@@ -16,7 +26,7 @@ $dark-grey: #323029;
   position: absolute;
   top: 1;
   left: 0;
-  height: 160%;
+  height: 100.1rem;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
   display: flex;
@@ -42,60 +52,64 @@ $dark-grey: #323029;
 }
 
 .hero-wrap-wrap {
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   width: 100%;
-  height: auto;
-}
-@media screen and (max-width: 1350px) {
-  .hero-wrap {
-    height: 140%;
-    // .text-wrap {
-    //   height: 80rem;
-    // }
-  }
+  height: 100.1rem;
 }
 
 @media screen and (max-width: 1350px) {
   .hero-wrap {
-    height: 140%;
+    height: 87.5rem;
     // .text-wrap {
     //   height: 80rem;
     // }
+  }
+  .hero-wrap-wrap {
+    height: 87.5rem;
   }
 }
 
 @media screen and (max-width: 1150px) {
   .hero-wrap {
-    height: 120%;
+    height: 75rem;
     .text-wrap {
       padding-bottom: 30rem;
     }
+  }
+  .hero-wrap-wrap {
+    height: 75rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .hero-wrap {
-    height: 100%;
+    height: 62.5rem;
     .text-wrap {
       padding-bottom: 21rem;
     }
+  }
+  .hero-wrap-wrap {
+    height: 62.5rem;
   }
 }
 
 @media screen and (max-width: 850px) {
   .hero-wrap {
-    height: 90%;
+    height: 56.3rem;
     .text-wrap {
       h1 {
         font-size: 2.5rem;
       }
     }
   }
+  .hero-wrap-wrap {
+    height: 56.3rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .hero-wrap {
-    height: 70%;
+    height: 43.8rem;
     .text-wrap {
       padding-bottom: 15rem;
       h1 {
@@ -103,11 +117,14 @@ $dark-grey: #323029;
       }
     }
   }
+  .hero-wrap-wrap {
+    height: 43.8rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .hero-wrap {
-    height: 60%;
+    height: 37.5rem;
     .text-wrap {
       padding-bottom: 12rem;
       h1 {
@@ -115,11 +132,14 @@ $dark-grey: #323029;
       }
     }
   }
+  .hero-wrap-wrap {
+    height: 37.5rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .hero-wrap {
-    height: 45%;
+    height: 28.1rem;
     .text-wrap {
       //   height: 27.5rem;
       width: 15rem;
@@ -129,5 +149,45 @@ $dark-grey: #323029;
         font-size: 1.75rem;
       }
     }
+  }
+  .hero-wrap-wrap {
+    height: 28.1rem;
+  }
+}
+
+.bestsellers {
+  font-family: "Raleway", sans-serif;
+  background-color: $white;
+
+  .bestsellers-header {
+    // color: red;
+    font-weight: 300;
+    color: $primary;
+  }
+
+  .content {
+    display: flex;
+  }
+  .itemCard {
+    width: 25%;
+    padding: 1rem;
+    // background-color: red;
+    .text-wrap {
+      display: flex;
+      flex-direction: column;
+      .addBtn {
+        background-color: $primary;
+      }
+    }
+    .img-wrap {
+      aspect-ratio: 1;
+      //   overflow: hidden;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .cards-wrap {
+    display: flex;
   }
 }

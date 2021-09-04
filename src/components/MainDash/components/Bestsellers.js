@@ -1,9 +1,22 @@
 import React from "react";
+import ItemCard from "./ItemCard.js";
 
 function Bestsellers(props) {
   return (
-    <div>
-      <h1>BestSeller</h1>
+    <div className="bestsellers py-5">
+      <div className="container">
+        <div>
+          <h1 className="bestsellers-header">Bestsellers</h1>
+          <div className="content">
+            <div className="cards-wrap">
+              <ItemCard />
+              <ItemCard />
+              <ItemCard />
+              <ItemCard />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
