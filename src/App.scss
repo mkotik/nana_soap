@@ -185,9 +185,10 @@ $dark-grey: #323029;
   background-color: $light-green;
   color: $mid-grey;
   padding: 10px 0px;
-  width: 100%;
+  width: 0%;
   height:100vh;
   overflow: hidden;
+  transition: width 0.3s;
   ul{
     list-style-type: none;
     padding: 0px;
@@ -198,6 +199,8 @@ $dark-grey: #323029;
     display: flex;
     justify-content: space-between;
     padding: 10px 0px;
+    opacity: 0;
+    transition: opacity 0.3s;
   }
   li:hover{
     cursor: pointer;
@@ -207,7 +210,12 @@ $dark-grey: #323029;
   }
 }
 
-
+.nav-menu-active{
+  width: 100%;
+  li {
+    opacity: 1;
+  }
+}
 
 
 @media screen and (max-width: 768px) {

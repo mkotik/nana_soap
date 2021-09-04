@@ -1,16 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import shoppingBag from "../../assets/bag.svg"
 import user from "../../assets/user.svg"
 import threeDots from "../../assets/three-dots.svg"
 import chevronRight from "../../assets/chevron-right.svg"
-import {CSSTransition} from 'react-transition-group'
 
 function HeaderSmall(props) {
+  const [menuClass, setMenuClass] = useState("")
+
+  const toggleOpen = () => {
+    if (menuClass === "nav-menu-active") {
+setMenuClass("")
+    } else {
+      setMenuClass("nav-menu-active")
+
+    }
+  }
+
   return (
       <>
     <div className="header-small py-3">
       <div className="container">
-        <div className="expander-wrap">
+        <div className="expander-wrap" onClick={toggleOpen}>
           <img src={threeDots} />
         </div>
         <div className="logo-container">
@@ -26,8 +36,7 @@ function HeaderSmall(props) {
         </div>
       </div>
     </div>
-    <CSSTransition>
-     <div className="nav-menu">
+     <div className={`nav-menu ${menuClass}`}>
          <div className="container">
      <ul className="container">
          <li className="first-item">
@@ -45,7 +54,6 @@ function HeaderSmall(props) {
        </ul>
        </div>
      </div>
-     </CSSTransition>
      </>
   );
 }
