@@ -13,7 +13,7 @@ function MainDash(props) {
       <Bestsellers />
       <MessageBlock />
       <MailingList />
-      {/* <Footer /> */}
+      <Footer />
       {/* <div style={{ height: "40rem" }}></div> */}
     </div>
   );

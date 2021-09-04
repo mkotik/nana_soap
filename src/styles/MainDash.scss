@@ -288,3 +288,41 @@ $hero-height-8: 140%;
     transform: translateY(5px);
   }
 }
+
+.footer {
+  background-color: $brown;
+  margin: 0px;
+  p {
+    margin: 0px;
+  }
+  .footerTabs {
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+    margin: auto;
+    h5 {
+      font-size: 1em;
+      color: $red-1;
+    }
+    h5:hover {
+      cursor: pointer;
+    }
+  }
+  .copyright {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    .footerTabs {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  .mailingList {
+    input {
+      width: 80%;
+    }
+  }
+}
