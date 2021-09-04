@@ -216,3 +216,11 @@ $hero-height-8: 140%;
     }
   }
 }
+@media screen and (max-width: 450px) {
+  .bestsellers {
+    .itemCard {
+      width: 50%;
+      padding: 0.5rem;
+    }
+  }
+}

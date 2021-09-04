@@ -10,7 +10,7 @@ function ItemCard(props) {
       <div className="text-wrap">
         <span className="title mt-1">Springtime Spice</span>
         <span className="price mt-1">$9.99</span>
-        <button className="addBtn btn btn-dark mt-2 ">Add to Cart</button>
+        <button className="addBtn btn btn-dark mt-2 ">Add to Bag</button>
       </div>
     </div>
   );
