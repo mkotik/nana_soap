@@ -6,7 +6,7 @@ function Bestsellers(props) {
     <div className="bestsellers py-5">
       <div className="container">
         <div>
-          <h1 className="bestsellers-header">Bestsellers</h1>
+          <h1 className="bestsellers-header">Explore our Bestsellers</h1>
           <div className="content">
             <div className="cards-wrap">
               <ItemCard />
