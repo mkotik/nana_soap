@@ -158,36 +158,61 @@ $hero-height-8: 140%;
 .bestsellers {
   font-family: "Raleway", sans-serif;
   background-color: $white;
+  overflow: hidden;
 
   .bestsellers-header {
-    // color: red;
     font-weight: 300;
     color: $primary;
   }
-
-  .content {
-    display: flex;
+  .img-wrap {
+    width: 100%;
   }
   .itemCard {
-    width: 25%;
-    padding: 1rem;
-    // background-color: red;
-    .text-wrap {
-      display: flex;
-      flex-direction: column;
-      .addBtn {
-        background-color: $primary;
-      }
-    }
-    .img-wrap {
-      aspect-ratio: 1;
-      //   overflow: hidden;
-      img {
-        max-width: 100%;
-      }
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    // background-color: blue;
+    width: 20%;
+    padding: 1.5rem;
+    margin-bottom: 10rem;
+  }
+  .text-wrap {
+    display: flex;
+    flex-direction: column;
   }
   .cards-wrap {
     display: flex;
+    // background-color: red;
+    height: 25.5rem;
+    flex-wrap: wrap;
+  }
+  .addBtn {
+    background-color: $primary;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .bestsellers {
+    .itemCard {
+      width: 25%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .bestsellers {
+    .itemCard {
+      width: 33.333%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bestsellers {
+    .itemCard {
+      width: 50%;
+    }
   }
 }

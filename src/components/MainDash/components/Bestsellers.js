@@ -13,6 +13,7 @@ function Bestsellers(props) {
               <ItemCard />
               <ItemCard />
               <ItemCard />
+              <ItemCard />
             </div>
           </div>
         </div>
