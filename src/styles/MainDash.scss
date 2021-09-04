@@ -40,6 +40,12 @@ $dark-grey: #323029;
     }
   }
 }
+
+.hero-wrap-wrap {
+  background-color: red;
+  width: 100%;
+  height: auto;
+}
 @media screen and (max-width: 1350px) {
   .hero-wrap {
     height: 140%;
