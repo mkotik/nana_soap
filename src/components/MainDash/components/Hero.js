@@ -4,7 +4,8 @@ function Hero(props) {
   return (
     <div className="hero-wrap">
       <div className="text-wrap">
-        <h1 class="hero-text">All Natural Handmade Soap</h1>
+        <h1 class="hero-text">All Natural Handmade Soaps</h1>
+        <button className="btn btn-light shopBtn">Shop Now</button>
       </div>
     </div>
   );
