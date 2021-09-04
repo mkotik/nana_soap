@@ -5,7 +5,7 @@ function Hero(props) {
     <div className="hero-wrap">
       <div className="text-wrap">
         <h1 class="hero-text">All Natural Handmade Soaps</h1>
-        <button className="btn btn-light shopBtn">Shop Now</button>
+        <button className="btn btn-light shopBtn btn-lg">Shop Now</button>
       </div>
     </div>
   );

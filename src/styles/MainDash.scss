@@ -19,53 +19,79 @@ $dark-grey: #323029;
   height: 160%;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   .text-wrap {
-    color: $dark-grey;
+    color: $white;
+    // background-color: red;
     display: flex;
     flex-direction: column;
-    height: 80rem;
+    padding-bottom: 35rem;
+    // height: 95rem;
     align-items: center;
     justify-content: flex-end;
     h1 {
       font-weight: 500;
+      text-shadow: -1px 0 rgba(0, 0, 0, 0.267), 0 1px rgba(0, 0, 0, 0.288),
+        1px 0 rgba(0, 0, 0, 0.178), 0 -1px rgba(0, 0, 0, 0.278);
       //   font-style: italic;
       font-size: 50px;
     }
   }
 }
+@media screen and (max-width: 1350px) {
+  .hero-wrap {
+    height: 140%;
+    // .text-wrap {
+    //   height: 80rem;
+    // }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .hero-wrap {
+    height: 140%;
+    // .text-wrap {
+    //   height: 80rem;
+    // }
+  }
+}
 
 @media screen and (max-width: 1150px) {
   .hero-wrap {
-    height: 140%;
+    height: 120%;
     .text-wrap {
-      height: 70rem;
+      padding-bottom: 30rem;
     }
   }
 }
 
 @media screen and (max-width: 1000px) {
   .hero-wrap {
-    height: 120%;
+    height: 100%;
     .text-wrap {
-      height: 60rem;
+      padding-bottom: 21rem;
     }
   }
 }
 
 @media screen and (max-width: 850px) {
   .hero-wrap {
-    height: 110%;
+    height: 90%;
     .text-wrap {
-      height: 55rem;
+      h1 {
+        font-size: 2.5rem;
+      }
     }
   }
 }
 
 @media screen and (max-width: 700px) {
   .hero-wrap {
-    height: 90%;
+    height: 70%;
     .text-wrap {
-      height: 45rem;
+      padding-bottom: 15rem;
       h1 {
         font-size: 2.25rem;
       }
@@ -75,9 +101,9 @@ $dark-grey: #323029;
 
 @media screen and (max-width: 550px) {
   .hero-wrap {
-    height: 70%;
+    height: 60%;
     .text-wrap {
-      height: 35rem;
+      padding-bottom: 12rem;
       h1 {
         font-size: 1.75rem;
       }
@@ -87,12 +113,12 @@ $dark-grey: #323029;
 
 @media screen and (max-width: 400px) {
   .hero-wrap {
-    height: 55%;
+    height: 45%;
     .text-wrap {
-      height: 27.5rem;
+      //   height: 27.5rem;
       width: 15rem;
-      margin: auto;
       color: white;
+      padding-bottom: 3rem;
       h1 {
         font-size: 1.75rem;
       }
