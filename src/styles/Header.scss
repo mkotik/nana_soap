@@ -37,8 +37,8 @@
   }
 }
 
-$light-green: #e3e3db;
-$dark-green: #67796e;
+$white: #fcf9f4;
+$primary: #c07572a6;
 $red-4: #a57b7b;
 $red-3: #deb0b0;
 $red-2: #f4d4d0;
@@ -48,23 +48,22 @@ $white: #fcf9f4;
 $mid-grey: #696760;
 $dark-grey: #323029;
 
-
 .header {
-  font-family: 'Raleway', sans-serif;
-  background-color: $dark-green;
-  .container{
+  font-family: "Raleway", sans-serif;
+  background-color: $primary;
+  .container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-  h1{
+  h1 {
     font-size: 30px;
     font-weight: 300;
-    color: $light-green;
+    color: $white;
     margin: 0px;
   }
-  h1:hover{
-    cursor: pointer
+  h1:hover {
+    cursor: pointer;
   }
   ul {
     list-style-type: none;
@@ -78,32 +77,32 @@ $dark-grey: #323029;
   li {
     // background-color: blue;
   }
-  .text{
-    color: $light-green;
+  .text {
+    color: $white;
     text-decoration: none;
     font-weight: 400;
   }
-  .text:hover{
-    border-bottom:solid white 1px;
-    cursor: pointer
+  .text:hover {
+    border-bottom: solid white 1px;
+    cursor: pointer;
   }
-  .img-container{
-  // height:100%;
+  .img-container {
+    // height:100%;
     // background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .img-container:hover{
-    cursor: pointer
+  .img-container:hover {
+    cursor: pointer;
   }
   .icon-container {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 33.3333%;
   }
-  .logo-container{
+  .logo-container {
     width: 33.3333%;
     padding: 0px;
     // background-color: blue;
@@ -112,22 +111,22 @@ $dark-grey: #323029;
 }
 
 .header-small {
-  font-family: 'Raleway', sans-serif;
-  background-color: $dark-green;
+  font-family: "Raleway", sans-serif;
+  background-color: $primary;
   display: none;
-  .container{
+  .container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-  h1{
+  h1 {
     font-size: 30px;
     font-weight: 300;
-    color: $light-green;
+    color: $white;
     margin: 0px;
   }
-  h1:hover{
-    cursor: pointer
+  h1:hover {
+    cursor: pointer;
   }
   ul {
     list-style-type: none;
@@ -141,55 +140,57 @@ $dark-grey: #323029;
   li {
     // background-color: blue;
   }
-  .text{
-    color: $light-green;
+  .text {
+    color: $white;
     text-decoration: none;
     font-weight: 400;
   }
-  .text:hover{
-    border-bottom:solid white 1px;
-    cursor: pointer
+  .text:hover {
+    border-bottom: solid white 1px;
+    cursor: pointer;
   }
-  .img-container{
-  // height:100%;
+  .img-container {
+    // height:100%;
     // background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .icon-container {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 25%;
   }
-  .logo-container{
+  .logo-container {
     width: 50%;
     padding: 0px;
     // background-color: blue;
     display: flex;
     justify-content: center;
   }
-  .expander-wrap{
+  .expander-wrap {
     width: 25%;
     display: flex;
   }
-  .expander-wrap:hover{
-    cursor: pointer
+  .expander-wrap:hover {
+    cursor: pointer;
   }
-  .img-container:hover{
-    cursor: pointer
+  .img-container:hover {
+    cursor: pointer;
   }
 }
-.nav-menu{
-  background-color: $light-green;
+.nav-menu {
+  background-color: $white;
   color: $mid-grey;
   padding: 10px 0px;
   width: 0%;
-  height:100vh;
+  height: 100vh;
   overflow: hidden;
   transition: width 0.3s;
-  ul{
+  position: absolute;
+  z-index: 1;
+  ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -202,27 +203,26 @@ $dark-grey: #323029;
     opacity: 0;
     transition: opacity 0.3s;
   }
-  li:hover{
+  li:hover {
     cursor: pointer;
   }
-  .first-item{
-    border-top: solid 1px $mid-grey
+  .first-item {
+    border-top: solid 1px $mid-grey;
   }
 }
 
-.nav-menu-active{
+.nav-menu-active {
   width: 100%;
   li {
     opacity: 1;
   }
 }
 
-
 @media screen and (max-width: 768px) {
-  .header{
+  .header {
     display: none;
   }
-  .header-small{
-    display: block
+  .header-small {
+    display: block;
   }
 }

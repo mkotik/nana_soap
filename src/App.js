@@ -1,13 +1,13 @@
-import React from 'react';
-import { Header} from "./components";
-import "./App.scss";
+import React from "react";
+import { Header, MainDash } from "./components";
+import "./styles/Header.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-
   return (
     <div className="App">
       <Header />
+      <MainDash />
     </div>
   );
 }

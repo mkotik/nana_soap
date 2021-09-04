@@ -1,0 +1,37 @@
+$white: #fcf9f4;
+$primary: #c07572a6;
+$red-4: #a57b7b;
+$red-3: #deb0b0;
+$red-2: #f4d4d0;
+$red-1: #f3e5e4;
+
+$white: #fcf9f4;
+$mid-grey: #696760;
+$dark-grey: #323029;
+
+.hero-wrap {
+  background: linear-gradient(
+      183deg,
+      rgba(255, 255, 255, 0.103) 70%,
+      rgba(211, 209, 209, 0.979)
+    ),
+    url("../assets/HeroImg.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 1;
+  left: 0;
+  height: 150%;
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  .text-wrap {
+    color: $dark-grey;
+    display: flex;
+    height: 75rem;
+    align-items: flex-end;
+    justify-content: center;
+    h1 {
+      font-weight: 100;
+      font-style: italic;
+    }
+  }
+}
