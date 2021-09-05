@@ -55,6 +55,9 @@ $dark-grey: #323029;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    a {
+      text-decoration: none;
+    }
   }
   h1 {
     font-size: 30px;

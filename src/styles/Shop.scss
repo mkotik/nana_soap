@@ -1,0 +1,30 @@
+$white: #fcf9f4;
+$primary: #c07572a6;
+$red-4: #a57b7b;
+$red-3: #deb0b0;
+$red-2: #f4d4d0;
+$red-1: #f3e5e4;
+$brown: rgb(155, 118, 103);
+
+$white: #fcf9f4;
+$light-grey: #b9b9b771;
+$mid-grey: #696760;
+$dark-grey: #323029;
+
+.shopHeader {
+  color: $mid-grey;
+  .content {
+    border-bottom: 1px solid $mid-grey;
+    text-align: left;
+    h1 {
+      font-family: "Inter", sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+    p {
+      font-family: "Lato", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+  }
+}
