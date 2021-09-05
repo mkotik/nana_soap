@@ -9,9 +9,7 @@ function Shop(props) {
       <ShopHeader />
       <div className="d-flex justify-content-between container">
         <SidePanel />
-        <div
-          style={{ width: "60rem", height: "100vh", backgroundColor: "red" }}
-        ></div>
+        <div style={{ width: "100rem", height: "100vh" }}></div>
       </div>
     </div>
   );

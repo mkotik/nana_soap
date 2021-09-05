@@ -9,7 +9,7 @@ $brown: rgb(155, 118, 103);
 $white: #fcf9f4;
 $light-grey: #b9b9b771;
 $mid-grey: #696760;
-$dark-grey: #323029;
+$dark-grey: #4d4a43;
 
 .shopHeader {
   color: $mid-grey;
@@ -42,6 +42,8 @@ $dark-grey: #323029;
 // }
 
 .sidePanel {
+  border-right: 1px solid $mid-grey;
+  padding-right: 3rem;
   .sidePanel-menu {
     overflow: hidden;
     max-height: 0px;
@@ -55,5 +57,9 @@ $dark-grey: #323029;
   }
   .active {
     max-height: 10rem;
+  }
+  h5,
+  label {
+    color: $dark-grey;
   }
 }
