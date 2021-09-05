@@ -28,3 +28,32 @@ $dark-grey: #323029;
     }
   }
 }
+
+// .sidePanel {
+//   .sidePanel-menu {
+//     overflow: hidden;
+//     transition: transform 0.2s;
+//     transform: scaleY(0);
+//     transform-origin: top;
+//   }
+//   .active {
+//     transform: scaleY(1);
+//   }
+// }
+
+.sidePanel {
+  .sidePanel-menu {
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.2s;
+    border-left: 1px solid $mid-grey;
+    padding-left: 0.5rem;
+    // background-color: blue;
+  }
+  .itemTitle:hover {
+    cursor: pointer;
+  }
+  .active {
+    max-height: 10rem;
+  }
+}
