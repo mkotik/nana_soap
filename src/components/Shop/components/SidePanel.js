@@ -2,8 +2,9 @@ import React from "react";
 import SidePanelItem from "./SidePanelItem";
 
 function SidePanel(props) {
+  const { filterBarActive } = props;
   return (
-    <div className="sidePanel">
+    <div className={`sidePanel ${filterBarActive ? "filterBarActive" : ""}`}>
       <SidePanelItem
         title="Ingredients"
         options={["Olive Oil", "Coconut Oil", "Bergamot", "Rosemary"]}

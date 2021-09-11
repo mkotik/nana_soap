@@ -15,7 +15,7 @@ function SidePanelItem(props) {
         <img src={isOpen ? chevronUp : chevronDown} className="pb-1" />
         <h5 className="ms-2">{title}</h5>
       </div>
-      <form className={`sidePanel-menu ${isOpen ? "active" : ""}`}>
+      <form className={`sidePanel-menu  ${isOpen ? "active" : ""}`}>
         {options.map((option) => {
           return (
             <label className=" d-flex align-items-center ">

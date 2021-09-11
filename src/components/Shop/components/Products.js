@@ -3,7 +3,7 @@ import React from "react";
 
 function Products(props) {
   return (
-    <div className="itemsWrap d-flex flex-wrap ms-5">
+    <div className="itemsWrap d-flex flex-wrap">
       <ProductCard />
       <ProductCard />
       <ProductCard />
