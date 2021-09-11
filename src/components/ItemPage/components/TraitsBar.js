@@ -4,7 +4,7 @@ import scrubIcon from "../../../assets/sponge.svg";
 
 function TraitsBar(props) {
   return (
-    <div className="traitsWrap d-flex align-items-center border-top border-bottom py-2">
+    <div className="traitsWrap d-flex align-items-center border-top border-bottom py-2 mb-3">
       <div className="smellWrap me-1">
         <img src={smellIcon} />
       </div>
@@ -17,7 +17,7 @@ function TraitsBar(props) {
       </div>
       <div className="exfoliationWrap text-start pe-5">
         <h5 className="top">Exfoliation:</h5>
-        <h5 className="bottom">Heavy</h5>
+        <h5 className="bottom">Medium</h5>
       </div>
     </div>
   );
