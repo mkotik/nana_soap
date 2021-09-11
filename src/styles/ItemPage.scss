@@ -71,4 +71,65 @@ $dark-grey: #4d4a43;
   .ingredientsLabel {
     font-weight: 400;
   }
+  .price {
+    color: rgb(43, 190, 43);
+  }
+  .contentWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .smellsLikeWrap,
+  .exfoliationWrap {
+    padding-right: 3rem;
+  }
+  .label {
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .itemPage {
+    .contentWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .imgWrap {
+      width: 100%;
+    }
+    .textContent {
+      width: 100%;
+      padding-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .itemPage {
+    h1 {
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+    .smellsLikeWrap,
+    .exfoliationWrap {
+      padding-right: 1.25rem;
+    }
+    .traitsWrap {
+      margin: auto;
+    }
+    .price {
+      margin: auto;
+    }
+    .quantityWrap {
+      margin: auto;
+      h5 {
+        text-align: center;
+      }
+    }
+    button {
+      margin: auto;
+    }
+  }
 }

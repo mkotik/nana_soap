@@ -8,14 +8,14 @@ function TraitsBar(props) {
       <div className="smellWrap me-1">
         <img src={smellIcon} />
       </div>
-      <div className="smellsLikeWrap text-start pe-5">
+      <div className="smellsLikeWrap text-start ">
         <h5 className="top">Smells Like:</h5>
         <h5 className="bottom">Lemons</h5>
       </div>
       <div className="scrubWrap me-2">
         <img src={scrubIcon} />
       </div>
-      <div className="exfoliationWrap text-start pe-5">
+      <div className="exfoliationWrap text-start ">
         <h5 className="top">Exfoliation:</h5>
         <h5 className="bottom">Medium</h5>
       </div>

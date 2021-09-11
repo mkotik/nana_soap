@@ -9,7 +9,7 @@ function ItemPage(props) {
   return (
     <div className="py-5 itemPage">
       <div className="container">
-        <div className="d-flex justify-content-between align-items-start">
+        <div className="contentWrap">
           <div className="imgWrap border">
             <img src={soapImg} />
           </div>
