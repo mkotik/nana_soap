@@ -1,6 +1,7 @@
 import React from "react";
 import ShopHeader from "./components/ShopHeader";
 import SidePanel from "./components/SidePanel";
+import Products from "./components/Products";
 import "../../styles/Shop.scss";
 
 function Shop(props) {
@@ -9,7 +10,8 @@ function Shop(props) {
       <ShopHeader />
       <div className="d-flex justify-content-between container">
         <SidePanel />
-        <div style={{ width: "100rem", height: "100vh" }}></div>
+        <Products />
+        {/* <div style={{ width: "100rem", height: "100vh" }}></div> */}
       </div>
     </div>
   );

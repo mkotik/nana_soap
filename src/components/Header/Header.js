@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 
 function Header(props) {
   const [shopBarOpen, setShopBarOpen] = useState(false);
-
   const clickShop = () => {
     setShopBarOpen(() => !shopBarOpen);
   };
