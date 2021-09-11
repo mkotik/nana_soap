@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import shoppingBag from "../../assets/bag.svg";
 import user from "../../assets/user.svg";
 import threeDots from "../../assets/three-dots.svg";
@@ -22,7 +23,9 @@ function HeaderSmall(props) {
             <img src={threeDots} />
           </div>
           <div className="logo-container">
-            <h1>Nana's Soaps</h1>
+            <Link to="/" className="text-decoration-none">
+              <h1>Nana's Soaps</h1>
+            </Link>
           </div>
           <div className="icon-container">
             <div className="img-container me-2">
@@ -34,7 +37,7 @@ function HeaderSmall(props) {
           </div>
         </div>
       </div>
-      <ExpandableMenu menuClass={menuClass} />
+      <ExpandableMenu menuClass={menuClass} setMenuClass={setMenuClass} />
     </>
   );
 }

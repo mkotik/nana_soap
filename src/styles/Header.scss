@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+Link {
+  text-decoration: none;
+}
 
 .App-logo {
   height: 40vmin;
@@ -111,8 +114,40 @@ $dark-grey: #323029;
     // background-color: blue;
     display: flex;
   }
+  .shopBar {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 30rem;
+    margin: auto;
+    overflow: hidden;
+
+    a {
+      color: $dark-grey;
+    }
+    li:hover {
+      text-decoration: underline;
+    }
+    li {
+      font-size: 1rem;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+.shopBarClosed {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.1s;
 }
 
+.shopBarOpen {
+  max-height: 45px;
+  transition: max-height 0.1s;
+}
+.shopBarWrap {
+  background-color: $red-2;
+}
 .header-small {
   font-family: "Raleway", sans-serif;
   background-color: $primary;
@@ -127,7 +162,9 @@ $dark-grey: #323029;
     font-weight: 300;
     color: $white;
     margin: 0px;
+    text-decoration: none;
   }
+
   h1:hover {
     cursor: pointer;
   }
@@ -200,6 +237,7 @@ $dark-grey: #323029;
   }
   li {
     border-bottom: solid $mid-grey 1px;
+    // border-top: solid $mid-grey 1px;
     display: flex;
     justify-content: space-between;
     padding: 10px 0px;
@@ -211,6 +249,27 @@ $dark-grey: #323029;
   }
   .first-item {
     border-top: solid 1px $mid-grey;
+  }
+  .expandableShopBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centers;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    // background-color: $red-1;
+    a {
+      text-decoration: none;
+      color: $mid-grey;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      font-size: 1rem;
+    }
+    // background-color: red;
+  }
+  .shopBarOpen {
+    max-height: 200px;
   }
 }
 

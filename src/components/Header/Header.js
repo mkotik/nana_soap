@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderSmall from "./HeaderSmall";
+import ShopBar from "./ShopBar";
 import shoppingBag from "../../assets/bag.svg";
 import user from "../../assets/user.svg";
 import { Link } from "react-router-dom";
 
 function Header(props) {
+  const [shopBarOpen, setShopBarOpen] = useState(false);
+
+  const clickShop = () => {
+    setShopBarOpen(() => !shopBarOpen);
+  };
   return (
     <>
       <div className="header py-3">
@@ -15,10 +21,8 @@ function Header(props) {
             </Link>
           </div>
           <ul>
-            <li className="me-2">
-              <Link to="/shop">
-                <a className="text">Shop</a>
-              </Link>
+            <li className="me-2" onClick={clickShop}>
+              <a className="text">Shop</a>
             </li>
             <li className="mx-2">
               <a className="text">Our Story</a>
@@ -37,6 +41,8 @@ function Header(props) {
           </div>
         </div>
       </div>
+      <ShopBar shopBarOpen={shopBarOpen} clickShop={clickShop} />
+
       <HeaderSmall />
     </>
   );
