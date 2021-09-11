@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, MainDash, Shop } from "./components";
+import { Header, MainDash, Shop, ItemPage } from "./components";
 import "./styles/Header.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Switch } from "react-router-dom";
@@ -12,8 +12,11 @@ function App() {
         <Route exact path="/">
           <MainDash />
         </Route>
-        <Route path="/shop">
+        <Route exact path="/shop">
           <Shop />
+        </Route>
+        <Route exact path="/shop/item">
+          <ItemPage />
         </Route>
       </Switch>
     </div>

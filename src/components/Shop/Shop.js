@@ -15,9 +15,19 @@ function Shop(props) {
   return (
     <div className="shop">
       <ShopHeader />
-      <div className="d-flex container">
+      <div className="shopBtnsContainer container">
         <div className="sliderBtn" onClick={handleFilterBtn}>
           <img src={sliders} />
+        </div>
+        <div className="d-flex flex-column justify-content-start align-items-start sortWrap">
+          <label>Sort By:</label>
+          <select className="sortBtn" name="cars" id="cars">
+            <option>Featured</option>
+            <option>Best Selling</option>
+            <option>Name A-Z</option>
+            <option>Price, low to high</option>
+            <option>Price, high to low</option>
+          </select>
         </div>
       </div>
       <div className="container mainContentWrap">

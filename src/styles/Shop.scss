@@ -84,11 +84,13 @@ $dark-grey: #4d4a43;
   }
   .name {
     font-weight: 400;
+    color: $red-1;
   }
   .price {
     font-size: 1rem;
     margin-top: 0.25rem;
     font-weight: 300;
+    color: $red-1;
   }
   .addToBagWrap {
     background-color: #9b7566;
@@ -174,9 +176,6 @@ $dark-grey: #4d4a43;
     align-items: center;
     border: solid 1px $mid-grey;
     display: none;
-    img {
-      transform: translateY(-2px);
-    }
   }
   .sliderBtn:hover {
     background-color: rgba(148, 219, 148, 0.308);
@@ -184,6 +183,20 @@ $dark-grey: #4d4a43;
   }
   .sliderBtn:active {
     background-color: rgba(148, 219, 148, 0.678);
+  }
+  .shopBtnsContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .sortBtn {
+    margin-right: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  .sortWrap {
+    transform: translateY(-1rem);
   }
 }
 
@@ -194,6 +207,9 @@ $dark-grey: #4d4a43;
     }
     .sliderBtn {
       display: block;
+    }
+    .shopBtnsContainer {
+      justify-content: space-between;
     }
   }
   .sidePanel {

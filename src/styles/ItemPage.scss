@@ -1,0 +1,67 @@
+$white: #fcf9f4;
+$primary: #c07572a6;
+$red-4: #a57b7b;
+$red-3: #deb0b0;
+$red-2: #f4d4d0;
+$red-1: #f3e5e4;
+$brown: rgb(155, 118, 103);
+
+$white: #fcf9f4;
+$light-grey: #b9b9b771;
+$mid-grey: #696760;
+$dark-grey: #4d4a43;
+
+.itemPage {
+  h5 {
+    margin: 0px;
+  }
+  .imgWrap {
+    width: 49%;
+    aspect-ratio: 1;
+    background-color: $white;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  .textContent {
+    width: 49%;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .smellWrap,
+  .scrubWrap {
+    width: 2rem;
+    height: 2rem;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  .traitsWrap {
+    h5 {
+      font-size: 1rem;
+    }
+    .top {
+      font-weight: 600;
+    }
+    .bottom {
+      font-weight: 300;
+    }
+  }
+  .quantityWrap {
+    .label {
+      font-size: 1rem;
+    }
+    .option {
+      font-size: 0.9rem;
+      margin-right: 1rem;
+
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .option:hover {
+      background-color: $red-2;
+      cursor: pointer;
+    }
+  }
+}
