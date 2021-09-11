@@ -204,6 +204,10 @@ $dark-grey: #4d4a43;
     overflow: hidden;
     transition: max-height 0.3s;
   }
+  .shopHeader {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .filterBarActive {
   max-height: 600px;

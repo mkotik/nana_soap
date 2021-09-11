@@ -72,37 +72,24 @@ $dark-grey: #323029;
 
 @media screen and (max-width: 650px) {
   .hero-wrap {
-    background: linear-gradient(0.25turn, #ffffff6e, #6d6c6a44, #6d3a0352),
-      url("../assets/Hero_mobile.jpg");
-    background-size: cover;
-    background-position-y: -10rem;
+    // background: linear-gradient(0.25turn, #ffffff6e, #6d6c6a44, #6d3a0352),
+    //   url("../assets/Hero_mobile.jpg");
+    // background-size: cover;
+    // background-position-y: -10rem;
     // background-repeat: no-repeat;
-    height: 45rem;
+    // height: 45rem;
   }
 }
 
 @media screen and (max-width: 590px) {
   .hero-wrap {
-    height: 35rem;
+    height: 22rem;
   }
 }
 
 @media screen and (max-width: 490px) {
   .hero-wrap {
-    height: 25rem;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .hero-wrap {
-    height: 35rem;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .hero-wrap {
-    background-position-y: -0rem;
-    height: 35rem;
+    height: 20rem;
   }
 }
 
