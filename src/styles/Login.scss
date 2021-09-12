@@ -60,3 +60,23 @@ $dark-grey: #4d4a43;
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .login {
+    input {
+      width: 100%;
+    }
+    label {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+    form {
+      width: 100%;
+    }
+    .content {
+      width: 100%;
+    }
+  }
+}

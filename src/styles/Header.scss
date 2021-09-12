@@ -302,3 +302,11 @@ $dark-grey: #323029;
     display: block;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .header-small {
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+}
