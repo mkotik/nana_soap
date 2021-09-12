@@ -3,8 +3,9 @@ import { Header, MainDash, Shop, ItemPage, Cart } from "./components";
 import "./styles/Header.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Switch } from "react-router-dom";
+import { connect } from "react-redux";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Header />
@@ -19,9 +20,15 @@ function App() {
           <ItemPage />
         </Route>
       </Switch>
-      {/* <Cart /> */}
+      {props.cartOpen && <Cart />}
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    ...state,
+  };
+};
+
+export default connect(mapStateToProps)(App);
