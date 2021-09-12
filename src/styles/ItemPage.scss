@@ -90,24 +90,19 @@ $dark-grey: #4d4a43;
 
 @media screen and (max-width: 770px) {
   .itemPage {
+    .textContent {
+      width: 100%;
+      padding-top: 2rem;
+    }
+    .imgWrap {
+      width: 100%;
+    }
     .contentWrap {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
     }
-    .imgWrap {
-      width: 100%;
-    }
-    .textContent {
-      width: 100%;
-      padding-top: 2rem;
-    }
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .itemPage {
     h1 {
       margin: auto;
       margin-bottom: 1rem;

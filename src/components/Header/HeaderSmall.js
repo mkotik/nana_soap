@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import { Link } from "react-router-dom";
 import shoppingBag from "../../assets/bag.svg";
 import user from "../../assets/user.svg";
@@ -11,8 +12,10 @@ function HeaderSmall(props) {
   const toggleOpen = () => {
     if (menuClass === "nav-menu-active") {
       setMenuClass("");
+      enableBodyScroll(document);
     } else {
       setMenuClass("nav-menu-active");
+      disableBodyScroll(document);
     }
   };
   return (
@@ -37,7 +40,7 @@ function HeaderSmall(props) {
           </div>
         </div>
       </div>
-      <ExpandableMenu menuClass={menuClass} setMenuClass={setMenuClass} />
+      <ExpandableMenu menuClass={menuClass} toggleOpen={toggleOpen} />
     </>
   );
 }

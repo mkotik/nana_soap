@@ -4,7 +4,7 @@ import chevronRight from "../../assets/chevron-right.svg";
 import chevronDown from "../../assets/chevron-down.svg";
 
 function ExpandableMenu(props) {
-  const { setMenuClass } = props;
+  const { toggleOpen } = props;
   const [shopBarOpen, setShopBarOpen] = useState(false);
   const handleShop = () => {
     setShopBarOpen(() => !shopBarOpen);
@@ -20,7 +20,7 @@ function ExpandableMenu(props) {
             </div>
             <ExpandableShopBar
               shopBarOpen={shopBarOpen}
-              setMenuClass={setMenuClass}
+              toggleOpen={toggleOpen}
             />
           </li>
           <li>
