@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, MainDash, Shop, ItemPage } from "./components";
+import { Header, MainDash, Shop, ItemPage, Cart } from "./components";
 import "./styles/Header.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Switch } from "react-router-dom";
@@ -19,6 +19,7 @@ function App() {
           <ItemPage />
         </Route>
       </Switch>
+      {/* <Cart /> */}
     </div>
   );
 }
