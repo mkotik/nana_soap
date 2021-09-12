@@ -5,11 +5,13 @@ import shoppingBag from "../../assets/bag.svg";
 import user from "../../assets/user.svg";
 import threeDots from "../../assets/three-dots.svg";
 import ExpandableMenu from "./ExpandableMenu";
+import { connect } from "react-redux";
+import { toggleCartOpen } from "../../actions";
 
 function HeaderSmall(props) {
   const [menuClass, setMenuClass] = useState("");
 
-  const toggleOpen = () => {
+  const toggleOpen = (props) => {
     if (menuClass === "nav-menu-active") {
       setMenuClass("");
       enableBodyScroll(document);
@@ -18,6 +20,12 @@ function HeaderSmall(props) {
       disableBodyScroll(document);
     }
   };
+
+  const handleOpenCart = () => {
+    props.toggleCartOpen(true);
+    disableBodyScroll(document);
+  };
+  console.log(props);
   return (
     <>
       <div className="header-small py-3">
@@ -34,7 +42,7 @@ function HeaderSmall(props) {
             <div className="img-container me-2">
               <img src={user} />
             </div>
-            <div className="img-container ms-2">
+            <div className="img-container ms-2" onClick={handleOpenCart}>
               <img src={shoppingBag} />
             </div>
           </div>
@@ -45,4 +53,4 @@ function HeaderSmall(props) {
   );
 }
 
-export default HeaderSmall;
+export default connect(null, { toggleCartOpen })(HeaderSmall);

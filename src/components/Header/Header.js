@@ -39,9 +39,11 @@ function Header(props) {
             </li>
           </ul>
           <div className="icon-container">
-            <div className="img-container me-2">
-              <img src={user} />
-            </div>
+            <Link to="/login">
+              <div className="img-container me-2">
+                <img src={user} />
+              </div>
+            </Link>
             <div className="img-container ms-2" onClick={handleOpenCart}>
               <img src={shoppingBag} />
             </div>

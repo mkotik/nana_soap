@@ -158,3 +158,11 @@ $dark-grey: #4d4a43;
     width: 25rem;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .cartPageWrap {
+    .cartOpen {
+      width: 100%;
+    }
+  }
+}

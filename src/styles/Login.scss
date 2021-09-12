@@ -1,0 +1,62 @@
+$white: #fcf9f4;
+$primary: #c07572a6;
+$red-4: #a57b7b;
+$red-3: #deb0b0;
+$red-2: #f4d4d0;
+$red-1: #f3e5e4;
+$brown: rgb(155, 118, 103);
+
+$white: #fcf9f4;
+$light-grey: #b9b9b771;
+$mid-grey: #696760;
+$dark-grey: #4d4a43;
+
+.login {
+  background-color: $brown;
+  height: 100vh;
+  font-family: "Oxygen";
+  color: $white;
+  .content {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    margin: auto;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $mid-grey;
+    width: 20rem;
+    outline: none;
+    color: $white;
+  }
+  button {
+    background-color: $white;
+    color: $red-4;
+    width: 20rem;
+  }
+  .createAccText {
+    align-self: flex-start;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .createAccText:hover {
+    cursor: pointer;
+  }
+}

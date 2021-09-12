@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, MainDash, Shop, ItemPage, Cart } from "./components";
+import { Header, MainDash, Shop, ItemPage, Cart, Login } from "./components";
 import "./styles/Header.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Switch } from "react-router-dom";
@@ -18,6 +18,9 @@ function App(props) {
         </Route>
         <Route exact path="/shop/item">
           <ItemPage />
+        </Route>
+        <Route exact path="/login">
+          <Login />
         </Route>
       </Switch>
       {props.cartOpen && <Cart />}
