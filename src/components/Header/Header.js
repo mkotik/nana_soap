@@ -4,11 +4,19 @@ import ShopBar from "./ShopBar";
 import shoppingBag from "../../assets/bag.svg";
 import user from "../../assets/user.svg";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { toggleCartOpen } from "../../actions";
+import { disableBodyScroll } from "body-scroll-lock";
 
 function Header(props) {
   const [shopBarOpen, setShopBarOpen] = useState(false);
   const clickShop = () => {
     setShopBarOpen(() => !shopBarOpen);
+  };
+
+  const handleOpenCart = () => {
+    props.toggleCartOpen(true);
+    disableBodyScroll(document);
   };
   return (
     <>
@@ -34,7 +42,7 @@ function Header(props) {
             <div className="img-container me-2">
               <img src={user} />
             </div>
-            <div className="img-container ms-2">
+            <div className="img-container ms-2" onClick={handleOpenCart}>
               <img src={shoppingBag} />
             </div>
           </div>
@@ -47,4 +55,4 @@ function Header(props) {
   );
 }
 
-export default Header;
+export default connect(null, { toggleCartOpen })(Header);
